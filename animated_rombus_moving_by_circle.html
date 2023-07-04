@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Sparks</title>
+    <style>
+      body {
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+      }
+
+      .spark-container {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .spark {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #f2ff00;
+        transform: rotate(-45deg);
+        animation: moveSpark 2s linear infinite;
+        box-shadow: 0 0 20px rgb(255, 251, 0);
+        filter: brightness(150%);
+      }
+
+      .spark2 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #f2ff00;
+        transform: rotate(-45deg);
+        animation: moveSpark 2s linear infinite;
+        box-shadow: 0 0 20px rgb(255, 251, 0);
+        filter: brightness(150%);
+        left: 1403px; /* Change the left value to adjust the position */
+      }
+
+      .spark3 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #f2ff00;
+        transform: rotate(-45deg);
+        animation: moveSpark 2s linear infinite;
+        box-shadow: 0 0 20px rgb(255, 251, 0);
+        filter: brightness(150%);
+        left: 1403px;
+        bottom: -650px;
+      }
+
+      .spark4 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #f2ff00;
+        transform: rotate(-45deg);
+        animation: moveSpark 2s linear infinite;
+        box-shadow: 0 0 20px rgb(255, 251, 0);
+        filter: brightness(150%);
+        left: 10px; /* Change the left value to adjust the position */
+        bottom: -650px;
+      }
+
+      @keyframes moveSpark {
+        0% {
+          transform: translate(-50%, -50%) rotate(-45deg) translateX(10px)
+            translateY(0);
+        }
+        25% {
+          transform: translate(-50%, -50%) rotate(-45deg) translateX(10px)
+            translateY(10px);
+        }
+        50% {
+          transform: translate(-50%, -50%) rotate(-45deg) translateX(0)
+            translateY(10px);
+        }
+        75% {
+          transform: translate(-50%, -50%) rotate(-45deg) translateX(0)
+            translateY(0);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(-45deg) translateX(10px)
+            translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spark-container">
+      <div class="spark"></div>
+      <div class="spark spark2"></div>
+      <div class="spark spark3"></div>
+      <div class="spark spark4"></div>
+    </div>
+  </body>
+</html>
