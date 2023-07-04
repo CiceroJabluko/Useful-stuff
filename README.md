@@ -1,2 +1,2 @@
 # Useful-stuff
-Handy stuff for future projects 
+Handy stuff for possible usage in the future projects
